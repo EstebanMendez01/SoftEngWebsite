@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
+import About from '../components/About';
 import Projects from '../components/Projects';
 import Experience from '../components/Experience';
 import ContactForm from '../components/ContactForm';
@@ -8,6 +9,7 @@ import ContactForm from '../components/ContactForm';
 
 <Layout title="Esteban Mendez - Software Engineer">
   <Hero />
+  <About client:load />
   <Experience client:load />
   <Projects client:load />
   <ContactForm client:load />
