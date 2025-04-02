@@ -14,18 +14,32 @@ interface Experience {
 export default function Experience() {
   const [experiences, setExperiences] = useState<Experience[]>([
     {
-      id: '1',
-      title: 'Software Engineer',
-      company: 'Example Corp',
-      location: 'Remote',
-      startDate: '2022-01',
+      id: '8',
+      title: 'Technical Support Specialist & Software Dev',
+      company: 'Great Lakes Data Racks & Cabinets',
+      location: 'Edinboro, Pennsylvania, United States',
+      startDate: '2024-08',
       endDate: 'Present',
       description: [
-        'Led development of microservices architecture',
-        'Implemented CI/CD pipelines',
-        'Reduced system latency by 40%'
+        'Responsible for supporting datacom cabinets, ensuring their optimal performance.',
+        'Addressing issues related to hardware, power, network connectivity, and physical access control.',
+        'Assisting customers with software integration of intelligent components.',
+        'Collaborating across departments to drive process improvements within the company.'
       ],
-      technologies: ['React', 'Node.js', 'TypeScript', 'AWS']
+      technologies: [
+        'Databases',
+        'Datacom',
+        'Network Administration',
+        'Physical Security',
+        'Software Support',
+        'SQL',
+        'Software Development',
+        'Artificial Intelligence (AI)',
+        'API Development',
+        'JavaScript',
+        'Mobile Applications',
+        'Web Applications'
+      ]
     },
     {
       id: '2',
@@ -103,32 +117,18 @@ export default function Experience() {
       technologies: []
     },
     {
-      id: '8',
-      title: 'Technical Support Specialist & Software Dev',
-      company: 'Great Lakes Data Racks & Cabinets',
-      location: 'Edinboro, Pennsylvania, United States',
-      startDate: '2024-08',
+      id: '1',
+      title: 'Software Engineer',
+      company: 'Example Corp',
+      location: 'Remote',
+      startDate: '2022-01',
       endDate: 'Present',
       description: [
-        'Responsible for supporting datacom cabinets, ensuring their optimal performance.',
-        'Addressing issues related to hardware, power, network connectivity, and physical access control.',
-        'Assisting customers with software integration of intelligent components.',
-        'Collaborating across departments to drive process improvements within the company.'
+        'Led development of microservices architecture',
+        'Implemented CI/CD pipelines',
+        'Reduced system latency by 40%'
       ],
-      technologies: [
-        'Databases',
-        'Datacom',
-        'Network Administration',
-        'Physical Security',
-        'Software Support',
-        'SQL',
-        'Software Development',
-        'Artificial Intelligence (AI)',
-        'API Development',
-        'JavaScript',
-        'Mobile Applications',
-        'Web Applications'
-      ]
+      technologies: ['React', 'Node.js', 'TypeScript', 'AWS']
     }
   ]);
 
