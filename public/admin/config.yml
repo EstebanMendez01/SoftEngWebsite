@@ -1,0 +1,31 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "experience"
+    label: "Experience"
+    folder: "src/content/experience"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Company", name: "company", widget: "string" }
+      - { label: "Location", name: "location", widget: "string" }
+      - { label: "Start Date", name: "startDate", widget: "string" }
+      - { label: "End Date", name: "endDate", widget: "string" }
+      - { label: "Description", name: "description", widget: "list" }
+      - { label: "Technologies", name: "technologies", widget: "list" }
+
+  - name: "projects"
+    label: "Projects"
+    folder: "src/content/projects"
+    create: true
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "URL", name: "html_url", widget: "string" }
+      - { label: "Topics", name: "topics", widget: "list" }
+      - { label: "Language", name: "language", widget: "string" }

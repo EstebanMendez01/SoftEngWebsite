@@ -1,0 +1,28 @@
+---
+const navItems = [
+  { href: '/', text: '_home' },
+  { href: '#about', text: '_about' },
+  { href: '#projects', text: '_projects' },
+  { href: '#contact', text: '_contact' },
+];
+---
+
+<nav class="fixed w-full bg-code-bg/80 backdrop-blur-md shadow-lg z-50 font-mono">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16">
+      <div class="flex items-center">
+        <a href="/" class="text-xl font-bold text-success">~/portfolio</a>
+      </div>
+      <div class="hidden md:flex items-center space-x-8">
+        {navItems.map(item => (
+          <a
+            href={item.href}
+            class="text-secondary hover:text-accent transition-colors duration-200"
+          >
+            {item.text}
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+</nav>
